@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="number_icon" transform="translate(-528.232 -42)">
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(528.232 42)" fill="none" stroke="#6772e5" stroke-width="1">
+      <circle cx="11" cy="11" r="11" stroke="none"/>
+      <circle cx="11" cy="11" r="10.5" fill="none"/>
+    </g>
+    <path id="ic_phone_android_24px" d="M11.717,1H6.832A1.98,1.98,0,0,0,5,3.1V14.329a1.98,1.98,0,0,0,1.832,2.1h4.885a1.98,1.98,0,0,0,1.832-2.1V3.1A1.98,1.98,0,0,0,11.717,1ZM10.5,15.031H8.053v-.7H10.5Zm1.985-2.1H6.069V3.1H12.48Z" transform="translate(530.28 44)" fill="#6772e5"/>
+  </g>
+</svg>

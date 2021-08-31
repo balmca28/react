@@ -1,0 +1,755 @@
+/*
+    @import "bootstrap-variables";
+    don't import this file. It is there only for variables references
+*/
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #06152b;
+  line-height: 1.4;
+}
+
+body, html {
+  height: 100%;
+}
+#root{
+  height: 100%;
+ 
+}
+.auth_view {
+  height: 100%;
+}
+
+.auth_view_img {
+  background-image: url(/assets/images/bg_login_new.png);
+  background-size: cover;
+  background-position: top;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: #5533FF;
+  padding: 0 4em;
+  height: 100%;
+}
+
+.logo_auth {
+  position: absolute;
+  top: 40px;
+  height: 30px;
+  left: 57px;
+  z-index: 999;
+}
+
+.slogan-center {
+  color: #fff;
+}
+
+.slogan-center > h1 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.slogan-center > div > ul {
+  padding-left: 17px;
+}
+
+.auth_view_content {
+  background-color: #FFF;
+  height: 100%;
+  /* padding: 8em 10em; */
+  overflow-y: auto;
+  display: -webkit-box;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+          flex: 1;
+  overflow: auto;
+}
+
+.form_main_content {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.signin_link {
+  color: #525f7f;
+  font-size: 12px;
+}
+
+.login_acc {
+  border-radius: 3.5px;
+  border: 1px solid #3A36DB;
+  padding: 8px 20px;
+  color: #06152b;
+  margin-left: 16px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 13px;
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+.login_acc:hover {
+  background: #3A36DB;
+  color: #fff;
+}
+
+.signup_holder {
+  padding: 30px;
+  text-align: right;
+  display: -webkit-box;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+          flex-grow: 0;
+}
+
+.signup_form_holder {
+  display: inline-block;
+  width: 100%;
+  max-width: 516px;
+}
+
+.sign-in-with-amazon {
+  display: block;
+  overflow: hidden;
+}
+
+.diveder_line_auth {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin: 2em 0 2em 0;
+}
+
+.diveder_line_auth:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: solid 1px #c7c5c5;
+  z-index: -1;
+}
+
+.diveder_line_auth_text {
+  margin: 0;
+  padding: 0 10px;
+  background: #fff;
+  display: inline-block;
+}
+
+.sign-in-with-amazon > img {
+  width: 250px;
+}
+
+.title_reg_right {
+  font-weight: 700;
+  color: #4C3858;
+  font-size: 24px;
+  text-align: left;
+}
+
+.subtitle_reg_right {
+  color: #A8AFBF;
+  font-size: 14px;
+  margin: 4px 0 30px 0;
+  text-align: left;
+}
+
+.form-group {
+  text-align: left;
+  position: relative;
+}
+
+.form-label {
+  color: #525f7f;
+  font-size: 13px;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.form-control {
+  border: 0;
+  border-bottom: 1px solid #d4d4d4;
+  width: 100%;
+  padding: 12px 0;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+  border-radius: 0;
+  box-shadow: none;
+  height: auto;
+  color: #373737;
+}
+
+.form-control:focus, .form-control:hover {
+  border-bottom: 1px solid #525f7f;
+  box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #B4B4B4;
+  font-weight: 400;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #B4B4B4;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #B4B4B4;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #B4B4B4;
+}
+
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus,
+.form-control:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.copyright_text {
+  color: #525F7F;
+  font-size: 12px;
+  text-align: left;
+  margin: 24px 0;
+  padding-bottom: 2em;
+}
+
+.forgotPass {
+  color: #525F7F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.forgotPass:hover {
+  font-size: 12px;
+  color: #6772E5;
+}
+
+.mob_show {
+  display: none;
+}
+
+.sigin_link_mob {
+  color: #A8AFBF;
+  text-align: left;
+  margin: 4px 0 30px 0;
+}
+
+.login_acc_link {
+  color: #6772E5;
+  text-decoration: underline !important;
+  margin-left: 8px;
+}
+
+.auth-submit-btn {
+  border-radius: 4px;
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.11);
+  width: 100%;
+  padding: 14px;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.auth-submit-btn:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.forgotpass_btn_holder > div {
+  display: inline-block;
+}
+
+.forgotpass_btn_holder_left {
+  width: 36%;
+  margin-right: 4%;
+}
+
+.forgotpass_btn_holder_right {
+  width: 55%;
+  margin-left: 4%;
+}
+
+.forgot_cancelBtn {
+  border-radius: 4px;
+  width: 100%;
+  padding: 14px;
+  color: #3ECF8E;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-align: center;
+  display: block;
+  border: 1px solid #3ecf8e;
+  text-decoration: none !important;
+}
+
+.forgot_cancelBtn:hover {
+  background: #fff;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.help-block {
+  color: #EC5D5D;
+  font-size: 12px;
+  padding: 4px 0 0 0;
+}
+
+.has-error > .form-control {
+  border-bottom: 1px solid #EC5D5D;
+  box-shadow: none !important;
+}
+
+.show_password, .show_password.active {
+  font-size: 12px;
+  line-height: 12px;
+  top: 32px;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+
+.show_password {
+  background-image: url("/assets/images/pass_hide.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.show_password.active {
+  background-image: url("/assets/images/pass_show.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.checkbox_agreeterms, .checkbox_agreepromotionals {
+  position: relative;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin: 0 6px 0 0px !important;
+}
+
+.checkbox_agreeterms:before, .checkbox_agreepromotionals:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background-color: rgba(233, 233, 233, 0.82);
+  border: 1px solid rgba(76, 56, 88, 0);
+}
+
+.checkbox_agreeterms:checked:before, .checkbox_agreepromotionals:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background-color: #53f;
+  border-radius: 4px;
+}
+
+.checkbox_agreeterms:checked:after, .checkbox_agreepromotionals:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 3px;
+  left: 7px;
+}
+
+.user_agreeterms_label, .user_agreepromotionals_label {
+  width: 90%;
+  display: inline-block;
+  vertical-align: top;
+  color: #525F7F;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+/* responsive */
+@media (max-width: 1199px) {
+  .signup_spacing {
+    padding: 0 10em;
+  }
+
+  .section_para_spacing {
+    padding: 1em 0 0 0px;
+  }
+
+  .spacing_home {
+    padding: 2em 0 0em 0;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .margin_spacing {
+    margin-left: 12px;
+  }
+
+  #banner_img {
+    background-size: 61%;
+  }
+
+  .auth_view_content {
+    padding: 0em 2em;
+  }
+}
+@media (max-width: 991px) {
+  .signup_holder {
+    display: none;
+  }
+
+  #banner_img {
+    display: none;
+  }
+
+  .img_banner {
+    display: block;
+  }
+
+  .signup_spacing {
+    padding: 0 6em;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  .sub_title {
+    padding: 10px 0 24px 0;
+  }
+
+  .responsive_spacing {
+    padding-bottom: 2em;
+  }
+
+  .section_spacing_second {
+    padding: 4em 0;
+  }
+
+  .section_spacing_top {
+    padding-top: 5em;
+  }
+
+  .video_box > video {
+    width: 100%;
+    margin-bottom: 2.5em;
+  }
+
+  .spacing_leftRight {
+    padding: 0;
+  }
+
+  .feature_list_box {
+    margin: 10px;
+    width: 30%;
+  }
+
+  .section_spacing_bottom_sm {
+    padding-bottom: 2em;
+  }
+
+  .auth_view_content {
+    overflow: initial;
+    padding: 4em 10em;
+  }
+
+  .reg_left_text_center {
+    padding: 24px 0 20px 0;
+    text-align: center;
+  }
+
+  .logo_auth {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .logo_reg {
+    position: relative;
+    height: 24px;
+    display: block;
+    text-align: center;
+    left: 0;
+    top: 20px;
+  }
+
+  .slogan-center {
+    text-align: center;
+  }
+
+  .auth_view_img {
+    display: block;
+    height: auto;
+    padding: 10px;
+  }
+
+  .slogan-center > h1 {
+    font-size: 20px;
+    padding-top: 22px;
+    font-weight: 500;
+  }
+
+  .form_main_content {
+    display: block;
+  }
+
+  .form_main_content, .form_main_content_two, .form_main_content_three {
+    padding-bottom: 20px;
+  }
+
+  .web_show {
+    display: none;
+  }
+
+  .mob_show {
+    display: block;
+  }
+
+  .signup_form_holder {
+    width: 90%;
+    display: inline-block;
+    box-shadow: 0 0 40px 0 #e9edf5;
+    padding: 20px 2em;
+  }
+
+  .centerAlign {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .header-section {
+    display: block;
+    vertical-align: middle;
+  }
+
+  .header_logo {
+    margin-top: 18px;
+  }
+
+  .signup_spacing {
+    padding: 0 3em;
+  }
+
+  .hide_nav {
+    display: none;
+  }
+
+  .btn_spacing {
+    margin-top: 0;
+  }
+
+  .auth_view_content {
+    padding: 4em 4em;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .videoPopup {
+    width: 100%;
+  }
+
+  .mob_nav_spacing {
+    margin-top: 20px;
+  }
+
+  .watch_icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .close_vid_testimonial, .close_reg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .close_vid_testimonial:before, .close_vid_testimonial:after {
+    right: 17px;
+    height: 20px;
+    top: 10px;
+  }
+
+  .close_reg:before, .close_reg:after {
+    right: 17px;
+    height: 20px;
+    top: 10px;
+  }
+
+  .signup_spacing {
+    padding: 0 1em;
+  }
+
+  .pre_title {
+    font-size: 13px;
+    padding-bottom: 4px;
+  }
+
+  .signup_section_title, .section_title {
+    font-size: 22px;
+  }
+
+  .signup_section_para, .section_para {
+    line-height: 26px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .header_logo {
+    margin-top: 17px;
+  }
+
+  .main_btn_small {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .main_btn_big {
+    padding: 14px 2em;
+    font-size: 14px;
+  }
+
+  .main_btn_white, .signup_btn {
+    padding: 14px 2em;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .main_title {
+    font-weight: 500;
+    font-size: 2em;
+  }
+
+  .sub_title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 10px 0 0px 0;
+  }
+
+  main {
+    padding: 8.5em 0 0 0;
+  }
+
+  .feature_list_box {
+    width: 90%;
+  }
+
+  .main_links {
+    font-size: 13px;
+  }
+
+  .section_title_two {
+    font-size: 24px;
+    padding-bottom: 14px;
+  }
+
+  ul.pack_content_details li {
+    margin-bottom: 18px;
+  }
+
+  .padding_10_1 {
+    padding: 10px 10px 14px 10px;
+  }
+
+  .padding_10_2 {
+    padding: 0 10px 10px 10px;
+  }
+
+  .feature_text {
+    font-size: 20px;
+  }
+
+  .sellon_brand {
+    margin: 10px;
+    max-width: 120px;
+  }
+
+  .auth_view_content {
+    padding: 4em 0em;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .signup_spacing, .form_reg {
+    padding: 18px 10px;
+  }
+
+  .contact_us {
+    padding: 10px;
+  }
+
+  .signup_form_holder {
+    width: 90%;
+    padding: 20px 1.5em;
+  }
+
+  .login_acc_link {
+    margin-left: 0px;
+  }
+
+  .forgotpass_btn_holder_right {
+    width: 58%;
+    margin-left: 2%;
+  }
+
+  .forgotpass_btn_holder_right .regsubmit {
+    padding: 20px 4px;
+  }
+
+  .forgotpass_btn_holder_left {
+    width: 36%;
+    margin-right: 2%;
+  }
+
+  .title_reg_right {
+    font-size: 22px;
+  }
+}
