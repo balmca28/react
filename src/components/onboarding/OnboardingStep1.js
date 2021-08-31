@@ -7,7 +7,7 @@ const OnboardingStep1 = () => {
     let connect="";
     let launch="";
     const [type, setType] = useState();
-    let step1continue= useState('disable');
+   
     const nextButton = () => {
         if(type){
         if (type==="pro") {
