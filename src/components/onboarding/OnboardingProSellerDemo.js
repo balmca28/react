@@ -1,5 +1,5 @@
 import OnboardingSidebar from "./OnboardingSidebar"
-
+ 
 const OnboardingProSellerDemo = () => {
     let intro="";
     let connect="active";

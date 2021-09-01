@@ -1,9 +1,10 @@
 import './Login.css';
+import MasterLogo from '../../assets/images/sellergeni_logo_white_master.png';
 const Slogan = () => {
     return ( 
         <div className="slogan-container">
                     <a className="logo_reg" href="/">
-                        <img src="http://static.local.sellerx/assets/images/sellergeni_logo_white_master.png" alt="Logo" className="logo_auth" />
+                        <img src={MasterLogo} alt="Logo" className="logo_auth" />
                     </a>
                     <div className="slogan-center">
                         <h1>Introducing<br/>GrowZ &#38; SmartPlug</h1>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="email_icon" transform="translate(-528.232 -42)">
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="11" cy="11" r="11" transform="translate(528.232 42)" fill="#6772e5"/>
+    <path id="ic_account_circle_24px" d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,3A3,3,0,1,1,9,8,3,3,0,0,1,12,5Zm0,14.2a7.2,7.2,0,0,1-6-3.22c.03-1.99,4-3.08,6-3.08s5.97,1.09,6,3.08A7.2,7.2,0,0,1,12,19.2Z" transform="translate(527.232 41)" fill="#fff"/>
+  </g>
+</svg>

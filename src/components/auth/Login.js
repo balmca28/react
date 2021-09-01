@@ -22,11 +22,11 @@ const Login = () => {
         <p className="subtitle_reg_right web_show">Enter your credentials below and sign in to your
             account</p>
         <div className="sigin_link_mob mob_show">Don't have an account?
-            <a href="http://app.local.sellerx/register" className="login_acc_link">Create Account</a>
+            <a href="/register" className="login_acc_link">Create Account</a>
         </div>
 
         
-        <form method="POST" action="http://app.local.sellerx/login" accept-charset="UTF-8">
+        <form method="POST" action="" accept-charset="UTF-8">
         <div className="form-group ">
                 <label className="form-label">Email Address / Store Name</label>
                 <input placeholder="Enter your email" className="email_input form-control" name="email" type="email" />
@@ -44,8 +44,8 @@ const Login = () => {
         </form>
        
         <div className="diveder_line_auth"><span className="diveder_line_auth_text">Or</span></div>
-        <a href='' className="sign-in-with-amazon" type="submit" value="">
-            <img src="/assets/images/amazon_login_img.png" alt="amazon sign in" / >    
+        <a href='/' className="sign-in-with-amazon" type="submit" value="">
+            <img src="../../assets/images/amazon_login_img.png" alt="amazon sign in" />    
         </a>
         <Copyright />
     </div>

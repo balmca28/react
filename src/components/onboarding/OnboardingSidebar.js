@@ -1,3 +1,5 @@
+import '../../assets/css/onboarding.css';
+
 const OnboardingSidebar = (props) => {
     return ( 
         <div className="steps-container">
