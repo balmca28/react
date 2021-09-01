@@ -1,5 +1,5 @@
 import OnboardingSidebar from "./OnboardingSidebar"
-
+ 
 const OnboardingWaitlist = () => {
     let intro="";
     let connect="active";

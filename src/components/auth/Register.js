@@ -1,5 +1,5 @@
 import Copyright from "./Copyright"
-import Signupholder from "./Signupholder"
+import Signinholder from "./Signinholder"
 import Slogan from "./Slogan"
 
 const Register = () => {
@@ -13,7 +13,7 @@ const Register = () => {
             
             <div className="col-lg-8 col-md-8 col-sm-12 auth_view_content">
             
-                    <Signupholder/>
+                    <Signinholder/>
                     <div className="form_main_content">
                     
                         <div className="signup_form_holder">

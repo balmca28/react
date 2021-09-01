@@ -31,7 +31,7 @@ const Forgotpassword = () => {
 
                             <div className="forgotpass_btn_holder">
                                 <div className="forgotpass_btn_holder_left">
-                                    <a href="https://app.sellergeni.com/login" className="forgot_cancelBtn">Cancel</a>
+                                    <a href="/Login" className="forgot_cancelBtn">Cancel</a>
                                 </div>
                                 <div className="forgotpass_btn_holder_right">
                                     <input className="btn-success btn-block auth-submit-btn btn" type="submit" value="Send Me Reset Link" />

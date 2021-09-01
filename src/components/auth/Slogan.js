@@ -1,10 +1,11 @@
 import Typography from '@material-ui/core/Typography';
 import './Login.css';
+import MasterLogo from '../../assets/images/sellergeni_logo_white_master.png';
 const Slogan = () => {
     return (
         <div className="slogan-container">
             <a className="logo_reg" href="/">
-                <img src="http://static.local.sellerx/assets/images/sellergeni_logo_white_master.png" alt="Logo" className="logo_auth" />
+                <img src="/assets/images/sellergeni_logo_white_master.png" alt="Logo" className="logo_auth" />
             </a>
             <div className="slogan-center">
                 <Typography component="h1">

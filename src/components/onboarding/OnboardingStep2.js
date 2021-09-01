@@ -1,4 +1,5 @@
 import OnboardingSidebar from "./OnboardingSidebar"
+import './OnboardingCss.css';
 
 const OnboardingStep2 = () => {
     let intro="";
@@ -6,7 +7,7 @@ const OnboardingStep2 = () => {
     let launch="";
     let waitlist=51;
     const checkwaitinglist = () => {
-        if (waitlist>=50) {
+        if (waitlist<=50) {
           return <a href="/onboarding-waitinglist" className="newbtn_main mg sellertype_btn " id="sellertype_btn">Continue</a>;
         }
         else {

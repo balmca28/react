@@ -1,7 +1,6 @@
 import OnboardingSidebar from "./OnboardingSidebar"
 import { useState } from "react";
-
-//import '/public/assets/css/onboarding.css';
+ 
 const OnboardingStep1 = () => {
     let intro="active";
     let connect="";
@@ -33,9 +32,14 @@ const OnboardingStep1 = () => {
                         Hello, StoreName <br/>
                         GrowZ - Blazing Fast Growth, just a click away 🚀
                     </div>
+                    <div className="onboarding_subtitle">
+                        Welcome to SellerGeni. We would like to know more about you to ensure quality service is
+                        provided based on your current requirements. Please select how long you have been selling on
+                        Amazon.
+                    </div>
                       <div className="selection_cards_holder">
                         <div className="selection_cards cards_shadow  first_step_cards first_step_cards_ht">
-                          <input type="radio" name="sellertype" value="newseller" onChange={event => setType(event.target.value)} id="newseller" className="sellertype_input" />
+                          <input type="radio" name="sellertype" value="newseller" onChange={event => setType(event.target.value)} id="newseller" className="sellertype_input" style={{opacity: 0}}/>
                             <label className="sellertype_label" for="newseller"></label>
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="200" height="151" viewBox="0 0 200 151">

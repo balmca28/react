@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="store_icon" transform="translate(-528.232 -42)">
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(528.232 42)" fill="none" stroke="#6772e5" stroke-width="1">
+      <circle cx="11" cy="11" r="11" stroke="none"/>
+      <circle cx="11" cy="11" r="10.5" fill="none"/>
+    </g>
+    <path id="ic_store_mall_directory_24px" d="M14.714,4H3.689V5.348H14.714Zm.689,6.742V9.394l-.689-3.371H3.689L3,9.394v1.348h.689v4.045H10.58V10.742h2.756v4.045h1.378V10.742Zm-6.2,2.7H5.067v-2.7H9.2Z" transform="translate(530.233 44)" fill="#6772e5"/>
+  </g>
+</svg>
