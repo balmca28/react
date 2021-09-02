@@ -1,53 +1,101 @@
 import Copyright from "./Copyright"
 import Slogan from "./Slogan";
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import React from 'react';
+import './Login.css';
+import { makeStyles } from '@material-ui/core/styles';
+import Signupholder from './Signupholder';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
+const useStyles = makeStyles(theme => ({
+    root: {
+        height: '100vh',
+    },
+    slogancolor: {
+        backgroundColor: '#5533FF',
+    },
+    form: {
+        width: '100%', // Fix IE 11 issue.
+        marginTop: theme.spacing(1),
+    },
 
+    submit: {
+        margin: theme.spacing(3, 0, 2),
+        backgroundColor: "#5cb85c"
+    }
+}));
 const Changepassword = () => {
-    return ( 
-        <div id="auth-container" className="container-fluid auth_view">
-            <div className="row auth_view">
-                <div className="col-lg-4 col-md-4 col-sm-12 auth_view_img">
-                    <Slogan/>
-                </div>
-                <div className="col-lg-8 col-md-8 col-sm-12 auth_view_content">
-                <div className="form_main_content">
-    <div className="signup_form_holder">
-        <div className="title_reg_right">Change your Password</div> 
-        <p className="subtitle_reg_right web_show"></p> 
-        <form method="POST" action="http://app.local.sellerx/password/reset">
-                <div className="form-group">
-                <label for="email" className="form-label">Email</label>
- 
-                <input id="email" type="email" className="form-control " name="email" value="" required="" autocomplete="email" autofocus="" />
-                 
-            </div>
+    const classes = useStyles();
+    return (
+        <Grid container component="main" className={classes.root} >
 
-            <div className="form-group ">
-                <label for="password" className="form-label">Password</label>
- 
-                <input id="password" type="password" className="form-control " name="password" required="" autocomplete="new-password" placeholder="Enter new password" />
+            <Grid xs={4} className="auth_view_img">
+                <Slogan />
+            </Grid>
+            <Grid xs={8}  >
+                <Signupholder />
+                <Container maxWidth="sm">
+                    <Typography component="h1" variant="h5">
+                        Change Your Password
+                    </Typography>
+                    <form className={classes.form} noValidate>
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="email"
+                            label="Email Address"
+                            name="email"
+                            autoComplete="email"
+                            autoFocus
+                        />
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            name="password"
+                            label="Password"
+                            type="password"
+                            id="password"
+                            autoComplete="current-password"
+                        />
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            name="Confirmpassword"
+                            label="Confirm Password"
+                            type="password"
+                            id="password"
+                            autoComplete="current-password"
+                        />
 
-                 
-            </div>
+                        <Button
+                            type="submit"
+                            fullWidth
+                            variant="contained"
+                            color="primary"
+                            className={classes.submit}
+                        >
+                            Reset password
+                        </Button>
 
-            <div className="form-group">
-                <label for="password-confirm" className="form-label">Confirm Password</label>
- 
-                <input id="password-confirm" type="password" className="form-control" name="password_confirmation" required="" autocomplete="new-password" placeholder="Confirm new password" /> 
-            </div>
 
-            <div> 
-                <button type="submit" className="btn-success btn-block auth-submit-btn btn">
-                    Reset Password
-                </button> 
-            </div>
-        </form> 
-        <Copyright/>
-    </div>
-</div>
-                </div>
-            </div>
-        </div>
-     );
+
+                        <Box mt={5}>
+                            <Copyright />
+                        </Box>
+                    </form>
+                </Container>
+            </Grid>
+        </Grid>
+    );
 }
- 
+
 export default Changepassword;

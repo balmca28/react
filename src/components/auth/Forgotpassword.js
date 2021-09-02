@@ -1,52 +1,93 @@
 import Copyright from "./Copyright"
-import Signupholder from "./Signupholder"
 import Slogan from "./Slogan";
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import React from 'react';
+import './Login.css';
+import { makeStyles } from '@material-ui/core/styles';
+import Signupholder from './Signupholder';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
+
+const useStyles = makeStyles(theme => ({
+    root: {
+        height: '100vh',
+    },
+    slogancolor: {
+        backgroundColor: '#5533FF',
+    },
+    form: {
+        width: '100%', // Fix IE 11 issue.
+        marginTop: theme.spacing(1),
+    },
+
+    submit: {
+        margin: theme.spacing(3, 0, 2),
+        backgroundColor: "#5cb85c"
+    }
+}));
 
 const Forgotpassword = () => {
-    return ( 
-<div id="auth-container" className="container-fluid auth_view">
-        <div className="row auth_view">
-            <div className="col-lg-4 col-md-4 col-sm-12 auth_view_img">
-                <Slogan/>
-            </div>
-           
-            <div className="col-lg-8 col-md-8 col-sm-12 auth_view_content">
-                <Signupholder/>
-                    <div className="form_main_content">
-                        <div className="signup_form_holder">
-                            <div className="title_reg_right">Forgot your password?</div>
-                            <p className="subtitle_reg_right web_show">Enter your e-mail address below, we will send you
-                                password reset link.</p>
-                            <div className="sigin_link_mob mob_show">Don't have an account?
-                                <a href="https://app.sellergeni.com/register" className="login_acc_link">Create Account</a>
-                            </div>
-                            
-                            <form method="POST" action="https://app.sellergeni.com/password/email" accept-charset="UTF-8">
-                            
-                            <div className="form-group ">
-                                <label className="form-label">Email Address</label>
-                                <input placeholder="Enter your email" className="email_input form-control" name="email" type="email" />
-                                
-                            </div>
+    const classes = useStyles();
 
-                            <div className="forgotpass_btn_holder">
-                                <div className="forgotpass_btn_holder_left">
-                                    <a href="/Login" className="forgot_cancelBtn">Cancel</a>
-                                </div>
-                                <div className="forgotpass_btn_holder_right">
-                                    <input className="btn-success btn-block auth-submit-btn btn" type="submit" value="Send Me Reset Link" />
-                                    
-                                </div>
-                            </div></form>
-                            <Copyright/>
-                        </div>
-                    </div>
+    return (
+        <Grid container component="main" className={classes.root} >
 
-           
-        </div>
-    </div>
-</div>
-     );
+            <Grid xs={4} className="auth_view_img">
+                <Slogan />
+            </Grid>
+            <Grid xs={8}  >
+                <Signupholder />
+                <Container maxWidth="sm">
+                    <Typography component="h1" variant="h5">
+                        Forgot your password?
+                    </Typography>
+                    <p>Enter your e-mail address below, we will send you password reset link.</p>
+                    <form className={classes.form} noValidate>
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="email"
+                            label="Email Address"
+                            name="email"
+                            autoComplete="email"
+                            autoFocus
+                        />
+
+                        <Button
+                            type="cancel"
+                            fullWidth
+                            variant="outlined"
+                            color="primary"
+                            className={classes.submit}
+                        >
+                            Cancel
+                        </Button>
+                        <Button
+                            type="submit"
+                            fullWidth
+                            variant="contained"
+                            color="primary"
+                            className={classes.submit}
+                        >
+                            Reset password
+                        </Button>
+
+
+
+                        <Box mt={5}>
+                            <Copyright />
+                        </Box>
+                    </form>
+                </Container>
+            </Grid>
+        </Grid>
+
+    );
 }
- 
+
 export default Forgotpassword;

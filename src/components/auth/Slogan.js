@@ -1,6 +1,6 @@
 import Typography from '@material-ui/core/Typography';
 import './Login.css';
-import MasterLogo from '../../assets/images/sellergeni_logo_white_master.png';
+
 const Slogan = () => {
     return (
         <div className="slogan-container">

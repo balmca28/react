@@ -1,3 +1,5 @@
+import { Typography } from "@material-ui/core";
+import { Link } from "react-router-dom";
 const Signupholder = () => {
     return ( 
         <div className="signup_holder">

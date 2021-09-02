@@ -45,7 +45,6 @@ const Login = () => {
                     <Typography component="h1" variant="h5">
                     Welcome back
                     </Typography>
-                    <p>Enter your credentials below and sign in to your account</p>
                     <form className={classes.form} noValidate>
                         <TextField
                             variant="outlined"
@@ -53,7 +52,7 @@ const Login = () => {
                             required
                             fullWidth
                             id="email"
-                            label="Email Address / Store Name"
+                            label="Email Address"
                             name="email"
                             autoComplete="email"
                             autoFocus
