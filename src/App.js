@@ -8,6 +8,8 @@ import Growz from "./components/Growz";
 import Settings from "./components/Settings";
 import Support from "./components/Support";
 import MarketplaceSettings from "./components/MarketplaceSettings";
+import DemoComponents from "./components/DemoComponents";
+import Microgoals from "./components/microgoals/Microgoals";
 export default function App() {
   return (
     <div className="App">
@@ -36,6 +38,12 @@ export default function App() {
       </Route>
       <Route exact path="/support">
       <Support/>
+      </Route>
+      <Route exact path="/microgoals">
+      <Microgoals/>
+      </Route>
+      <Route exact path="/components">
+      <DemoComponents/>
       </Route>
      
     </Switch>

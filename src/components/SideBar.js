@@ -22,8 +22,8 @@ import { Link } from "react-router-dom";
 
 function SideBar(props) {
   const [menuCollapse, setMenuCollapse] = useState(false);
-  
-  
+
+
   const menuIconClick = () => {
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
@@ -45,62 +45,62 @@ function SideBar(props) {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-             <MenuItem 
+              <MenuItem
                 active={props.activeDashboard}
                 icon={<FiHome />}
-                 
+
               >
                 <Link to="/dashboard">
-                Dashboard</Link>
+                  Dashboard</Link>
               </MenuItem>
-              
-              <MenuItem 
+
+              <MenuItem
                 active={props.activeProducts}
                 icon={<FaList />}
-              
+
               >
-            <Link to="/products">
-            Products</Link>
-              
+                <Link to="/products">
+                  Products</Link>
+
               </MenuItem>
               <MenuItem
                 active={props.activeSmartplug}
                 icon={<FaRegHeart />}>
                 <Link to="/smartplug">
-              Smartplug</Link>
-                
+                  Smartplug</Link>
+
               </MenuItem>
 
               <SubMenu title="Growz" icon={<BiCog />}>
-                  <MenuItem active={props.activeGrowz}><Link to="/growz">Growz</Link></MenuItem>
-                  <MenuItem>All Campagins</MenuItem>
-                  <MenuItem>All Adgroups</MenuItem>
-                  <MenuItem>Micro goal</MenuItem>
-                  <MenuItem>Reports</MenuItem>
-                  
-                </SubMenu>
-             
+                <MenuItem active={props.activeGrowz}><Link to="/growz">Growz</Link></MenuItem>
+                <MenuItem>All Campagins</MenuItem>
+                <MenuItem>All Adgroups</MenuItem>
+                <MenuItem>Micro goal</MenuItem>
+                <MenuItem>Reports</MenuItem>
+
+              </SubMenu>
+
 
 
               <MenuItem
                 active={props.activeSettings}
                 icon={<BiCog />}>
-               
-               <Link to="/settings">
-               Settings</Link>
+
+                <Link to="/settings">
+                  Settings</Link>
               </MenuItem>
               <MenuItem
                 active={props.activeMarketplaceSettings}
                 icon={<BiCog />}>
-                   <Link to="/marketplacesettings">
-               Marketplace Settings</Link>
+                <Link to="/marketplacesettings">
+                  Marketplace Settings</Link>
               </MenuItem>
               <MenuItem
                 active={props.activeSupport}
                 icon={<BiCog />}>
-               <Link to="/support">Support</Link>
+                <Link to="/support">Support</Link>
               </MenuItem>
-                
+
             </Menu>
           </SidebarContent>
           <SidebarFooter>
@@ -110,7 +110,7 @@ function SideBar(props) {
           </SidebarFooter>
         </ProSidebar>
       </div>
-      
+
     </>
   );
 }
